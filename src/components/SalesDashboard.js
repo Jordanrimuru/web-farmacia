@@ -124,7 +124,7 @@ const SalesDashboard = ({ products, onSale, clients }) => {
           </ul>
           <div className="mt-4 pt-3 border-t font-bold flex justify-between text-lg">
             <span>Total:</span>
-            <span>${selectedProducts.reduce((sum, p) => sum + p.price, 0)}</span>
+            <span>S/.{selectedProducts.reduce((sum, p) => sum + p.price, 0)}</span>
           </div>
           <button
             onClick={handleCompleteSale}
